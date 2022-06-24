@@ -28,6 +28,8 @@ RUN  mkdir -p /var/run/supervisor /var/log/supervisor \
 # Creating base directory for Xvfb
 RUN mkdir -p /tmp/.X11-unix && chmod 1777 /tmp/.X11-unix
 
+RUN wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz -O "/ngrok-v3-stable-linux-amd64.tgz" && tar xvzf ngrok-v3-stable-linux-amd64.tgz -C /usr/local/bin
+
 CMD ["/opt/bin/entry_point.sh"]
 
 #============================
