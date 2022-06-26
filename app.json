@@ -6,7 +6,12 @@
         "Docker",
         "noVNC"
     ],
-    "env": {},
+    "env": {
+      "NGROCK_TOKEN" : {
+      "description": "If we are using ngrok",
+      "required": false
+    }
+    },
     "website": "",
     "repository": "https://github.com/dhruv-2015/vps-heroku",
     "logo": "https://raw.githubusercontent.com/RixEtte/vps-heroku/main/58480873cef1014c0b5e48ea.png",
