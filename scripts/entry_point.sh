@@ -6,7 +6,7 @@
 #==============================================
 
 mkdir -p /Desktop
-# ngrok config add-authtoken "${NGROCK_TOKEN}"
+ngrok config add-authtoken "${NGROCK_TOKEN}"
 cat << EOF >  /Desktop/Chromium.desktop
 [Desktop Entry]
 Version=1.0
